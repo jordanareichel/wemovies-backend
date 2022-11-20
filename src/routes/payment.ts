@@ -3,7 +3,7 @@ import { FastifyInstance } from "fastify";
 import { z } from "zod";
 
 
-export async function payment(fastify: FastifyInstance) {
+export async function paymenRoute(fastify: FastifyInstance) {
   fastify.post("/payment", {
   }, async (request, reply) => {
 

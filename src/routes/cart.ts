@@ -90,4 +90,10 @@ export async function cartRoute(fastify: FastifyInstance) {
     return reply.status(201).send();
   });
 
+  fastify.delete('/cart/deleteAll', async () => {
+    
+    return  await prisma.carts.deleteMany({})
+
+  });
+
 }
